@@ -2,7 +2,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
   .then(response => response.json())
   .then(data => {
     data.forEach(book => {
-      let card = `<div class="col-6 col-sm-6 clo-md-4 col-lg-4 col-xl-3 mb-4">
+      let card = `<div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
                   <div class="card h-100">
                      <img src="${book.img}" class="card-img-top img-responsive" alt="${book.title}">
                      <div class="card-body">
@@ -18,6 +18,6 @@ fetch("https://striveschool-api.herokuapp.com/books")
 
 document.addEventListener("click", function (event) {
   if (event.target.matches("#discard")) {
-    event.target.closest(".col").remove();
+    event.target.closest(".col-6").remove();
   }
 });
