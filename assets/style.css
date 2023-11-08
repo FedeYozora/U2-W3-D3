@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+.img-responsive {
+  width: auto;
+  min-height: 500px;
+  object-fit: cover;
+}
