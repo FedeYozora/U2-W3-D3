@@ -19,6 +19,6 @@ fetch("https://striveschool-api.herokuapp.com/books")
 
 document.addEventListener("click", function (event) {
   if (event.target.matches("#discard")) {
-    event.target.closest(".col-6").remove();
+    event.target.closest(".col-12").remove();
   }
 });
