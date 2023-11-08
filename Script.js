@@ -7,8 +7,9 @@ fetch("https://striveschool-api.herokuapp.com/books")
                      <img src="${book.img}" class="card-img-top img-responsive" alt="${book.title}">
                      <div class="card-body">
                         <h5 class="card-title">${book.title}</h5>
-                        <p class="card-text">Prezzo: ${book.price}</p>
+                        <p class="card-text">Prezzo: ${book.price} $</p>
                          <button class="btn btn-primary" id="discard">Scarta</button>
+                         <button class="btn btn-success" id="addCart">Compra</button>
                      </div>
                     </div>
                 </div>`;

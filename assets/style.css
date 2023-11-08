@@ -6,3 +6,11 @@
   min-height: 500px;
   object-fit: cover;
 }
+
+.blank {
+  flex-grow: 0.97;
+}
+
+i {
+  font-size: 1.2em;
+}
